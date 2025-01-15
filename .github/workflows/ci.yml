@@ -32,7 +32,7 @@ jobs:
 
       - name: make olddefconfig && make
         run: |
-          make olddefconfig && make
+          make olddefconfig && make -j$(nproc)
         working-directory: linux
         shell: bash
 
