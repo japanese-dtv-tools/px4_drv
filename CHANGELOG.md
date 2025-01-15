@@ -1,5 +1,11 @@
 # 移行後の CHANGELOG
 
+## [v0.5.5](https://github.com/japanese-dtv-tools/px4_drv/compare/v0.5.4...v0.5.5) - 2025-01-15
+- ビルド時の警告除去 by @kounoike in https://github.com/japanese-dtv-tools/px4_drv/pull/42
+- 簡易的なCI導入 by @kounoike in https://github.com/japanese-dtv-tools/px4_drv/pull/41
+- dkms mkdebに頼らない.debのbuild方法 by @kounoike in https://github.com/japanese-dtv-tools/px4_drv/pull/40
+- windowsでの簡易CI by @kounoike in https://github.com/japanese-dtv-tools/px4_drv/pull/44
+
 ## [v0.5.4](https://github.com/japanese-dtv-tools/px4_drv/compare/v0.5.3...v0.5.4) - 2025-01-15
 - リリース時にapt repositoryを作成する by @kounoike in https://github.com/japanese-dtv-tools/px4_drv/pull/23
 
