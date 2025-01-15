@@ -1,6 +1,6 @@
 # 以降後の CHANGELOG
 
-# 移行以前の CHANGELOG
+# 移行以前の 変更点
 
 ## 変更点 (WinUSB 版)
 
