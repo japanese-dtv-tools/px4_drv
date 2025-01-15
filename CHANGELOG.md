@@ -15,14 +15,6 @@
 - READMEでこのフォークについての説明を更新 by @kounoike in https://github.com/japanese-dtv-tools/px4_drv/pull/5
 - Add-labeler by @kounoike in https://github.com/japanese-dtv-tools/px4_drv/pull/6
 - Add-CHANGELOG by @kounoike in https://github.com/japanese-dtv-tools/px4_drv/pull/7
-
-## [v0.5.3](https://github.com/japanese-dtv-tools/px4_drv/compare/v0.5.2...v0.5.3) - 2025-01-15
-- tagpr 導入 by @kounoike in https://github.com/japanese-dtv-tools/px4_drv/pull/1
-- tagprのバージョンを環境変数から取得する by @kounoike in https://github.com/japanese-dtv-tools/px4_drv/pull/3
-- Remove v-prefix by @kounoike in https://github.com/japanese-dtv-tools/px4_drv/pull/4
-- READMEでこのフォークについての説明を更新 by @kounoike in https://github.com/japanese-dtv-tools/px4_drv/pull/5
-- Add-labeler by @kounoike in https://github.com/japanese-dtv-tools/px4_drv/pull/6
-- Add-CHANGELOG by @kounoike in https://github.com/japanese-dtv-tools/px4_drv/pull/7
 - Release for v0.5.3 by @github-actions in https://github.com/japanese-dtv-tools/px4_drv/pull/2
 - Release for v0.5.3 by @github-actions in https://github.com/japanese-dtv-tools/px4_drv/pull/8
 
