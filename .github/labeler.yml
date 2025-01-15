@@ -1,0 +1,21 @@
+Documentation:
+- changed-files:
+  - any-glob-to-any-file:
+    - 'docs/*'
+    - '**/*.md'
+
+Windows:
+- changed-files:
+  - any-glob-to-any-file:
+    - 'winusb/*'
+
+Linux:
+- changed-files:
+  - any-glob-to-any-file:
+    - 'driver/*'
+    - 'dkms/*'
+    - 'dkms.conf'
+    - 'etc/*'
+    - 'fwtool/*'
+    - 'include/*'
+    - 'pk4_drv-dkms-mkdeb/*'
