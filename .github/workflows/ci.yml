@@ -1,7 +1,5 @@
 on:
   push:
-    branches:
-      - "tagpr-from-*"
 
 jobs:
   ci:
