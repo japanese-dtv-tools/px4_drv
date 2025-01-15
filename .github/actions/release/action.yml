@@ -20,11 +20,11 @@ runs:
         fetch-depth: 0
 
     - name: Install DKMS
-      run: sudo apt-get install -y debhelper devscripts dh-exec dkms dpkg
+      run: sudo apt-get install -y debhelper devscripts dh-exec dkms dpkg fakeroot
       shell: bash
 
     - name: Build Debian package
-      run: dkms mkdeb --source-only
+      run: ./build_deb.sh
       shell: bash
 
     - name: Release
