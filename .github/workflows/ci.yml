@@ -1,0 +1,42 @@
+on:
+  push:
+
+jobs:
+  ci:
+    runs-on: ubuntu-24.04
+    strategy:
+      matrix:
+        linux-version: [v6.8, v6.10, v6.12, master]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: src
+
+      - uses: actions/checkout@v4
+        with:
+          repository: torvalds/linux
+          path: linux
+          ref: ${{ matrix.linux-version }}
+
+      - name: setup build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential libncurses-dev libssl-dev dpkg-dev flex bison dwarves libelf-dev
+        shell: bash
+
+      - name: setup config
+        run: |
+          cp src/kernel_config linux/.config
+        shell: bash
+
+      - name: make olddefconfig
+        run: |
+          make olddefconfig
+        working-directory: linux
+        shell: bash
+
+      - name: build
+        run: |
+          make KDIR=../linux VERBOSE=1 CFLAGS=-Wnoerror=missing-prototypes
+        shell: bash
+        working-directory: src
