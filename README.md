@@ -6,7 +6,7 @@ PLEX 社の [Webサイト](http://plex-net.co.jp) にて配布されている公
 ## このフォークについて
 
 本家 [nns779/px4_drv](https://github.com/nns779/px4_drv) は 2021 年以降メンテナンスされておらず、残念ながら [nns779](https://github.com/nns779) 氏自身もネット上から失踪されています。  
-このフォークは、各々のフォークに散逸していた有用な変更を一つにまとめ、継続的にメンテナンスしていくことを目的としています。
+このフォークは、各々のフォークに散逸していた有用な変更を一つにまとめ、継続的にメンテナンスしていくことを目的として [tsukumijima](https://github.com/tsukumijima) 氏が開始したものを GitHub Organization 化しました。
 
 ### 変更点 (WinUSB 版)
 
