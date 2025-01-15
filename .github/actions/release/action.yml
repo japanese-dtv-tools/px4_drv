@@ -31,3 +31,4 @@ runs:
         files: |
           ../*.deb
         token: ${{ inputs.token }}
+        tag_name: ${{ inputs.tag }}
