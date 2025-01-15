@@ -37,6 +37,6 @@ jobs:
 
       - name: build
         run: |
-          make KDIR=../linux VERBOSE=1 CFLAGS=-Wnoerror=missing-prototypes
+          make KDIR=../../linux VERBOSE=1 CFLAGS=-Wnoerror=missing-prototypes
         shell: bash
-        working-directory: src
+        working-directory: src/driver
