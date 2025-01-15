@@ -1,8 +1,5 @@
 # 移行後の CHANGELOG
 
-## [v0.5.4](https://github.com/japanese-dtv-tools/px4_drv/compare/v0.5.3...v0.5.4) - 2025-01-15
-- リリース時にapt repositoryを作成する by @kounoike in https://github.com/japanese-dtv-tools/px4_drv/pull/23
-
 ## [v0.5.3](https://github.com/japanese-dtv-tools/px4_drv/compare/v0.5.2...v0.5.3) - 2025-01-15
 - tagpr 導入 by @kounoike in https://github.com/japanese-dtv-tools/px4_drv/pull/1
 - tagprのバージョンを環境変数から取得する by @kounoike in https://github.com/japanese-dtv-tools/px4_drv/pull/3
