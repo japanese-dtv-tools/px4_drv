@@ -1,6 +1,6 @@
 # 移行以前の CHANGELOG
 
-### 変更点 (WinUSB 版)
+## 変更点 (WinUSB 版)
 
 - エラー発生時の MessageBox を表示しない設定を追加 
   - BonDriver の ini 内の `DisplayErrorMessage` を 1 に設定すると今まで通り MessageBox が表示される
@@ -27,7 +27,7 @@
   - Visual Studio 2019 が入っていれば、build.ps1 を実行するだけで全自動でビルドからパッケージングまで行える
 - README（このページ）に WinUSB 版のインストール方法などを追記
 
-### 変更点 (Linux 版)
+## 変更点 (Linux 版)
 
 動作確認は Ubuntu 20.04 LTS (x64) で行っています。
 
@@ -40,3 +40,6 @@
 - Debian パッケージ (.deb) の作成とインストールに対応
 - DKMS でのインストール時にファームウェアを自動でインストールするように変更
 - README (このページ) に Debian パッケージからのインストール方法などを追記
+
+# 以降後の CHANGELOG
+
