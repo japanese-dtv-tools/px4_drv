@@ -30,7 +30,7 @@ jobs:
           cp src/kernel_config linux/.config
         shell: bash
 
-      - name: make olddefconfig
+      - name: make olddefconfig && make
         run: |
           make olddefconfig && make
         working-directory: linux
