@@ -10,7 +10,8 @@ jobs:
       contents: write
       packages: write
       pull-requests: write
-      # id-token: write
+      id-token: write
+      pages: write
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/release
