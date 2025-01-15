@@ -21,4 +21,5 @@ jobs:
         with:
           tag: ${{ steps.tagpr.outputs.tag }}
           token: ${{ secrets.GITHUB_TOKEN }}
+          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
         if: steps.tagpr.outputs.tag != ''

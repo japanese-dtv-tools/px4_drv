@@ -18,3 +18,4 @@ jobs:
         with:
           tag: ${{ github.ref }} # Note that github.ref is formatted like refs/tag/v1.2.3
           token: ${{ secrets.GITHUB_TOKEN }}
+          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}

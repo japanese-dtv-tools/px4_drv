@@ -7,6 +7,9 @@ inputs:
   token:
     description: 'The GitHub token'
     required: true
+  gpg_private_key:
+    description: 'The GPG private key'
+    required: true
 
 runs:
   using: composite
@@ -38,13 +41,13 @@ runs:
       run: |
         echo "$GPG_PRIVATE_KEY" | base64 --decode | gpg --import
       env:
-        GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+        GPG_PRIVATE_KEY: ${{ inputs.gpg_private_key }}
 
     - name: Build APT repository
       run: |
         ./make_apt_pages.sh
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ inputs.token }}
 
     - name: Publish artifact
       uses: actions/upload-pages-artifact@v3
