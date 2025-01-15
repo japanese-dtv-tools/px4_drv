@@ -2,7 +2,7 @@
 
 set -e
 
-version=${TAGPR_NEXT_VERSION}
+version=${TAGPR_NEXT_VERSION//v/}
 
 cd $(dirname $0)
 
