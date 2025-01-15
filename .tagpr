@@ -3,5 +3,5 @@
     releaseBranch = develop
     versionFile = .tagpr
     command = ./update-versions.sh
-    release = false
+    release = true
     changelog = true
