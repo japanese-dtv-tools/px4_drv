@@ -1,0 +1,11 @@
+Source: px4-drv-dkms
+Section: misc
+Build-Depends: debhelper (>= 10), dkms (>= 1.95)
+Standards-Version: 3.8.1
+Package: px4-drv-dkms
+Version: 0.5.4
+Architecture: all
+Provides: px4-drv-modules (= 0.5.4)
+Depends: dkms (>= 1.95)
+Description: px4 driver in DKMS format.
+Maintainer: japanese-dtv-tools <dummy-japanese-dtv-tools@example.com>

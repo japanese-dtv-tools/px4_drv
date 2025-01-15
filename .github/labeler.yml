@@ -18,4 +18,3 @@ Linux:
     - 'etc/*'
     - 'fwtool/*'
     - 'include/*'
-    - 'pk4_drv-dkms-mkdeb/*'
