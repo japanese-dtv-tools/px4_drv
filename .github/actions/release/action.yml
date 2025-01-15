@@ -46,7 +46,7 @@ runs:
 
     - name: Build APT repository
       run: |
-        ./make_apt_pages.sh
+        ./build_apt_pages.sh
       shell: bash
       env:
         GITHUB_TOKEN: ${{ inputs.token }}
