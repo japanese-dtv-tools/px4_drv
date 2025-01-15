@@ -38,6 +38,10 @@ jobs:
 
       - name: build
         run: |
-          make KDIR=../../linux VERBOSE=1
+          KVER=${KVER//v/}
+          KVER=${KVER//master/6.13}
+          make KVER=${KVER} KDIR=../../linux VERBOSE=1
         shell: bash
         working-directory: src/driver
+        env:
+          KVER: ${{ matrix.linux-version }}
