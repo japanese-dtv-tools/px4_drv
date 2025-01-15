@@ -12,18 +12,18 @@ runs:
   using: composite
   steps:
     - name: Checkout repository
-    uses: actions/checkout@v3
+      uses: actions/checkout@v3
 
-  - name: Install DKMS
-    run: sudo apt-get install -y debhelper devscripts dh-exec dkms dpkg
+    - name: Install DKMS
+      run: sudo apt-get install -y debhelper devscripts dh-exec dkms dpkg
 
-  - name: Build Debian package
-    run: dkms mkdeb --source-only
+    - name: Build Debian package
+      run: dkms mkdeb --source-only
 
-  - name: Release
-    uses: softprops/action-gh-release@v2
-    with:
-      generate_release_notes: true
-      files: |
-        ../*.deb
-      token: ${{ inputs.token }}
+    - name: Release
+      uses: softprops/action-gh-release@v2
+      with:
+        generate_release_notes: true
+        files: |
+          ../*.deb
+        token: ${{ inputs.token }}
