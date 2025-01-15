@@ -32,7 +32,7 @@ jobs:
 
       - name: make olddefconfig
         run: |
-          make olddefconfig
+          make olddefconfig && make modules_prepare
         working-directory: linux
         shell: bash
 
