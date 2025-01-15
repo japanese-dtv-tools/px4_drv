@@ -32,16 +32,12 @@ jobs:
 
       - name: make olddefconfig
         run: |
-          make olddefconfig && make modules_prepare
+          make olddefconfig && make
         working-directory: linux
         shell: bash
 
       - name: build
         run: |
-          KVER=${KVER//v/}
-          KVER=${KVER//master/6.13}
-          make KVER=${KVER} KDIR=../../linux VERBOSE=1
+          make KVER=$(cd ../../linux; make kernelversion) KDIR=../../linux VERBOSE=1
         shell: bash
         working-directory: src/driver
-        env:
-          KVER: ${{ matrix.linux-version }}
