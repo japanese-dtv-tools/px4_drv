@@ -5,6 +5,7 @@ jobs:
   ci:
     runs-on: ubuntu-24.04
     strategy:
+      fail-fast: false
       matrix:
         linux-version: [v6.8, v6.10, v6.12, master]
     steps:
@@ -37,6 +38,6 @@ jobs:
 
       - name: build
         run: |
-          make KDIR=../../linux VERBOSE=1 CFLAGS=-Wnoerror=missing-prototypes
+          make KDIR=../../linux VERBOSE=1
         shell: bash
         working-directory: src/driver
