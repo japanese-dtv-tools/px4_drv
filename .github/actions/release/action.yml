@@ -33,23 +33,23 @@ runs:
         token: ${{ inputs.token }}
         tag_name: ${{ inputs.tag }}
 
-      # build personal apt repository
-      - name: import gpg key
-        run: |
-          echo "$GPG_PRIVATE_KEY" | base64 --decode | gpg --import
-        env:
-          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+    # build personal apt repository
+    - name: import gpg key
+      run: |
+        echo "$GPG_PRIVATE_KEY" | base64 --decode | gpg --import
+      env:
+        GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
 
-      - name: Build APT repository
-        run: |
-          ./make_apt_pages.sh
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Build APT repository
+      run: |
+        ./make_apt_pages.sh
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Publish artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./out
+    - name: Publish artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: ./out
 
-      - name: Deploy pages
-        uses: actions/deploy-pages@v4
+    - name: Deploy pages
+      uses: actions/deploy-pages@v4
