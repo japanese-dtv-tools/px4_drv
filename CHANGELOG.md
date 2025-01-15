@@ -1,4 +1,4 @@
-# 以降後の CHANGELOG
+# 移行後の CHANGELOG
 
 ## 移行以前の 変更点
 
