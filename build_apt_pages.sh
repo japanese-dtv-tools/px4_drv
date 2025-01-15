@@ -56,8 +56,7 @@ function build_apt_repository() {
 
 cp -f KEY.gpg "${OUTDIR}/KEY.gpg"
 
-# tsukumijima/px4_drv
-get_debreleases tsukumijima/px4_drv
+get_debreleases japanese-dtv-tools/px4_drv
 
 # build apt repository
 build_apt_repository
