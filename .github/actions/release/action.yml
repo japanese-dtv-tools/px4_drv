@@ -40,12 +40,14 @@ runs:
     - name: import gpg key
       run: |
         echo "$GPG_PRIVATE_KEY" | base64 --decode | gpg --import
+      shell: bash
       env:
         GPG_PRIVATE_KEY: ${{ inputs.gpg_private_key }}
 
     - name: Build APT repository
       run: |
         ./make_apt_pages.sh
+      shell: bash
       env:
         GITHUB_TOKEN: ${{ inputs.token }}
 
