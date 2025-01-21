@@ -1,5 +1,19 @@
 # 移行後の CHANGELOG
 
+## [v0.5.4](https://github.com/japanese-dtv-tools/px4_drv/compare/v0.5.2...v0.5.4) - 2025-01-21
+- tagpr 導入 by @kounoike in https://github.com/japanese-dtv-tools/px4_drv/pull/1
+- tagprのバージョンを環境変数から取得する by @kounoike in https://github.com/japanese-dtv-tools/px4_drv/pull/3
+- Remove v-prefix by @kounoike in https://github.com/japanese-dtv-tools/px4_drv/pull/4
+- READMEでこのフォークについての説明を更新 by @kounoike in https://github.com/japanese-dtv-tools/px4_drv/pull/5
+- Add-labeler by @kounoike in https://github.com/japanese-dtv-tools/px4_drv/pull/6
+- Add-CHANGELOG by @kounoike in https://github.com/japanese-dtv-tools/px4_drv/pull/7
+- リリース時にapt repositoryを作成する by @kounoike in https://github.com/japanese-dtv-tools/px4_drv/pull/23
+- ビルド時の警告除去 by @kounoike in https://github.com/japanese-dtv-tools/px4_drv/pull/42
+- 簡易的なCI導入 by @kounoike in https://github.com/japanese-dtv-tools/px4_drv/pull/41
+- dkms mkdebに頼らない.debのbuild方法 by @kounoike in https://github.com/japanese-dtv-tools/px4_drv/pull/40
+- windowsでの簡易CI by @kounoike in https://github.com/japanese-dtv-tools/px4_drv/pull/44
+- Update-version-in-prerm by @kounoike in https://github.com/japanese-dtv-tools/px4_drv/pull/45
+
 ## [v0.5.4](https://github.com/japanese-dtv-tools/px4_drv/compare/v0.5.3...v0.5.4) - 2025-01-15
 - リリース時にapt repositoryを作成する by @kounoike in https://github.com/japanese-dtv-tools/px4_drv/pull/23
 
