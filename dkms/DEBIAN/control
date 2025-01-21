@@ -3,7 +3,7 @@ Section: misc
 Build-Depends: debhelper (>= 10), dkms (>= 1.95)
 Standards-Version: 3.8.1
 Package: px4-drv-dkms
-Version: 0.5.4
+Version: 0.5.3
 Architecture: all
 Provides: px4-drv-modules (= 0.5.4)
 Depends: dkms (>= 1.95)
