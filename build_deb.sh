@@ -14,7 +14,7 @@ WORKDIR=./work
 SRCDIR=${WORKDIR}/usr/src/px4_drv-${version}
 SHAREDIR=${WORKDIR}/usr/share/px4_drv-dkms
 
-[ -d ${WORKDIR} ] && rm -rf ${WORKDIR} && mkdir -p ${WORKDIR} && mkdir -p ${SRCDIR} && mkdir -p ${SHAREDIR}
+rm -rf ${WORKDIR} && mkdir -p ${WORKDIR} && mkdir -p ${SRCDIR} && mkdir -p ${SHAREDIR}
 
 # prepare files
 cp -af ./dkms/DEBIAN ${WORKDIR}/
