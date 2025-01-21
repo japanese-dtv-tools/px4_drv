@@ -16,6 +16,9 @@ sed -i -e "s/^#define\s\s*PX4_DRV_VERSION\s\s*.*/#define	PX4_DRV_VERSION	\"$vers
 sed -i -e "s/^Version:.*/Version: $version/" dkms/DEBIAN/control
 sed -i -e "Provides: px4-drv-modules .*/Provides: px4-drv-modules (= $version)/" dkms/DEBIAN/control
 
+# Update version in DEBIAN/prerm
+sed -i -e "VERSION=.*/VERSION=\"$version\"/" dkms/DEBIAN/prerm
+
 # Update version in build_deb.sh
 sed -i -e "s/^version=.*/version=\"$version\"/" build_deb.sh
 
