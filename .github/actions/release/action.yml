@@ -32,7 +32,7 @@ runs:
       with:
         generate_release_notes: true
         files: |
-          ../*.deb
+          ./*.deb
         token: ${{ inputs.token }}
         tag_name: ${{ inputs.tag }}
 
